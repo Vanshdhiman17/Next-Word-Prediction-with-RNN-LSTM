@@ -175,7 +175,7 @@ next-word-prediction/
 
 The project includes a Streamlit interface for entering text and predicting the next word using the trained LSTM model.
 
-![Next Word Prediction UI](screenshots/ui.png)
+![Next Word Prediction UI](UI.png)
 
 ## 📦 Installation
 
