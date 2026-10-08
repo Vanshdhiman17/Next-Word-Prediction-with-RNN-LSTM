@@ -66,8 +66,8 @@ lstm_model.add(Dense(units=vocab_size, activation='softmax'))
 lstm_model.compile(optimizer = 'adam', loss = 'categorical_crossentropy', metrics = ['accuracy'])
 print(lstm_model.summary())
 
-# history_rnn = rnn_model.fit(x_padded, y_one_hot, epochs = 10, batch_size = 128, validation_split = 0.1)
-# history_lstm = lstm_model.fit(x_padded, y_one_hot, epochs = 5, batch_size = 128, validation_split=0.1)
+history_rnn = rnn_model.fit(x_padded, y_one_hot, epochs = 10, batch_size = 128, validation_split = 0.1)
+history_lstm = lstm_model.fit(x_padded, y_one_hot, epochs = 100, batch_size = 128, validation_split=0.1)
 lstm_model.save('lstm_model.h5')
 
 index_to_word = {}
